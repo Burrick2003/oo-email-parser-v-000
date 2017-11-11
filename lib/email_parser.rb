@@ -10,8 +10,17 @@
   end
 
   def parse
-    @output_array = @raw_input.delete(",").split(" ")
-    @output_array
+    output = []
+    temp = @raw_input.delete(",").split(" ")
+      temp.each do |element|
+        if output.include?(element) == false
+          output << element
+        end
+        
+      end
+     
+     
+    output
   end
 
 
