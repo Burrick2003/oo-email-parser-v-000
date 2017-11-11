@@ -16,10 +16,10 @@
         if output.include?(element) == false
           output << element
         end
-        
+
       end
-     
-     
+
+
     output
   end
 
