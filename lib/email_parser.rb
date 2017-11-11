@@ -9,7 +9,7 @@
     @raw_input = input
   end
 
-  def self.parse
+  def parse
     @output_array = @raw_input.delete(",").split(" ")
     @output_array
   end
